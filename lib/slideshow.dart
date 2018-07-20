@@ -58,8 +58,9 @@ class SlideShow extends Object with LifecycleTracker {
         }
       }
     });
-
   }
+
+
 
 
 }
