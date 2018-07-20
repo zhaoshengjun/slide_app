@@ -20,4 +20,17 @@ class SlideShowApp {
     rangeSlidePos.value = slideNumber.toString();
     slideScreen.style.visibility = 'visible';
   }
+
+  setButton(String id, Function clickHandler) {
+    ButtonInputElement btn = querySelector(id);
+    btn.onClick.listen(clickHandler);
+  }
+
+  void startSlideShow(MouseEvent event) {
+    showFirstSlide();
+  }
+
+  void showFirstSlide() {
+    showSlide(0);
+  }
 }
